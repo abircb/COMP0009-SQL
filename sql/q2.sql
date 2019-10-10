@@ -3,3 +3,4 @@ FROM suppliers S, items I, supplieritems SI
 WHERE I.description = "tent"
 AND I.itemID = SI.itemID
 AND SI.supplierID = S.supplierID
+ORDER BY I.stocklevel DESC
