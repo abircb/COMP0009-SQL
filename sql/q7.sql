@@ -1,5 +1,5 @@
 /*
-Lists the order ID, customer credentials (name, town state) and the date the order was placed for orders that have not been fulfilled
+Lists the order ID, the customer credentials (name, town, and state) and the date the order was placed for orders that have not been fulfilled
 */
 
 SELECT LI.orderID, (LI.quantity - LI.despatched) AS itemsRemaining, CONCAT(C.firstname, " ", C.familyname) as customerName, C.town, C.state, O.date
